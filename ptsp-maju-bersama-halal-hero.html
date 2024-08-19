@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="TemplateMo">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Cek Perkembangan Sertifikat Produkmu - Daftarkan Sekarang Gratis: Sertifikat Halal untuk UMKM di Halalhero.id -
+    halalhero.id</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta property="og:image" item-prop="image" content="images/ThumbnailWaHHID.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="images/ThumbnailWaHHID.png" />
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <meta name="description"
+    content="Temukan produk halal terbaik yang terverifikasi dengan bantuan Sertifikat Halal Makanan Halal Indonesia." />
+  <meta name="keywords"
+    content="Sertifikat Halal, urus halal, Makanan Halal, Produk Halal, sihalal, Kemenag, BPJPH, UMKM Halal, UMKM, Sertifikasi Halal, Makanan Minuman, Halal Indonesia." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8Z_vmj5YO-SDqn-zSPPYyzoso5DoK65p5g&s" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+
+<body>
+  <a href="https://api.whatsapp.com/send?phone=62811890855&text=Halo admin Halalhero, saya punya UMKM tapi bingung belum dapat sertifikat Halal.. bisa bantu buatkan?"
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <ul class="left-info">
+            <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00 (Exc. Sat +15:00)</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>0811-890-855</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="right-icons">
+            <li><a href="https://tiktok.com/@halalhero.id"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://instagram.com/halalhero.id"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h2>halal<em style="color: #F12029;">hero</em></h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="ptsp.html">PTSP</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://wa.me/6281387577491">Butuh Bantuan?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Input PTSP Via Halalhero</h1>
+          <span>Input data secara cepat, tanpa perlu nunggu loading dari ptsp.halal.go.id</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Integrated Form System Halal.go.id API -->
+  <div>
+    <div class="col-md-12">
+      <div class="section-heading-2">
+        <h2>Input Data via <em>Halalhero.id</em></h2>
+        <span>Integrated System with ptsp API</span>
+      </div>
+    </div>
+    <form id="loginForm">
+      <label for="userid">User</label>
+      <input type="text" id="userid" name="userid" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginStatus"></p>
+  </div>
+
+  <!-- (LOGIN HALAL) JavaScript for API Integration -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const userid = document.getElementById('userid').value;
+      const password = document.getElementById('password').value;
+
+      fetch('http://lph-api.halal.go.id/auth/signin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userid: userid,  // Make sure the key matches the API requirement
+          password: password,
+        }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.token) {
+            document.getElementById('loginStatus').textContent = 'Login successful!';
+            // Save the token for future use, e.g., localStorage.setItem('token', data.token);
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: data.message || 'Unknown error',
+              footer: '<a href="https://wa.me/62811890855">Data Anda Salah, Butuh Bantuan?</a>'
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'An error occurred during login.',
+            footer: '<a href="https://wa.me/62811890855">Why do I have this issue?</a>'
+          });
+        });
+    });
+  </script>
+
+
+  <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-content">
+            <span>Masih Ragu dengan Kami?</span>
+            <h2>Mari Lihat Pengalaman Kami di <em>Penyelia Halal</em></h2>
+            <p>"Jangan biarkan keraguan menghalangi langkah Anda. Telusuri pengalaman kami yang luas di Penyelia Halal
+              dan lihat mengapa banyak bisnis mempercayakan sertifikasi halal mereka kepada kami. Dengan rekam jejak
+              yang solid dan layanan yang profesional, kami siap membantu Anda mencapai standar halal terbaik."</p>
+            <a href="https://instagram.com/halalhero.id" class="filled-button">Instagram Kami</a>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">3501</div>
+                <div class="count-title">Sertifikat Halal</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">3501</div>
+                <div class="count-title">UMKM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 halalhero.id. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/accordions.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="vendor/slick/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
